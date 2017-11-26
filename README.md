@@ -52,7 +52,9 @@ is the most unique prefix of all.
 make sure you escape mentions (especially `@everyone` and `@here`).
 While the user may not have permission to use `@everyone`, your bot may has,
 resulting in a possible "mention injection".
-For example, you could insert a zero-width space (`\u200B`) after each `@` to solve this problem.
+**Note:** Some libraries automatically do this for you *by default*,
+but with others you'll be required to enable this feature or implement it yourself,
+e.g. by inserting a zero-width space (`\u200B`) after each `@`.
 
 If you have an idea for an addition or change to this document, please make a
 pull request and we can discuss it.
